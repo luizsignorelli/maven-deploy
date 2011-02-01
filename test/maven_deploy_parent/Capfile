@@ -1,0 +1,13 @@
+load_paths << "/home/luiz/projects/maven-deploy/lib"
+
+role :app_server_host, "localhost"
+
+set :app_server, "jboss"
+set :app_server_user, "luiz"
+set :app_server_dir, "/opt/app_servers/jboss"
+
+set :apps_dir, "/opt/apps"
+
+set :user, "luiz"
+
+load 'maven_deploy'
